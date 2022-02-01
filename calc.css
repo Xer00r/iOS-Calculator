@@ -10,11 +10,11 @@
     background: none;
 }
 
-html {
+/* html {
     width: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 
 body {
     height: 100vh;
@@ -24,6 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .calc-container {
