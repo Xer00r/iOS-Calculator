@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 62.5;
+    font-size: 62.5%;
     border: none;
     outline: none;
     background: none;
@@ -20,15 +20,16 @@ body {
 }
 
 .calc-container {
-    height: 34.75rem;
-    border: 1px solid white;
-    width: 16.25rem;
+    height: 55rem;
+    /* border: 1px solid white; */
+    width: 27rem;
     border-radius: 1.4rem;
     background-color: #0f0f0f;
     padding: .7rem .8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .calc-container .clock {
@@ -44,7 +45,33 @@ body {
 }
 
 .calc-container .screen {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 15rem;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 1rem;
+    position: relative;
+    top: 2rem;
+}
+
+.calc-container .screen .operations {
+    font-size: 1.4rem;
+    font-family: 'Spartan';
+    font-weight: 300;
+    color: rgb(184, 184, 184);
+    margin-top: 2rem;
+}
+
+.calc-container .screen .result {
+    font-size: 4rem;
+    font-family: 'Spartan';
+    font-weight: 300;
+    color: rgb(231, 231, 231);
+    margin-top: 2rem;
 }
 
 .calc-container .keys {
@@ -58,14 +85,15 @@ body {
 }
 
 .calc-container .keys button{
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
     border-radius: 50%;
     color: black;
     text-align: center;
     margin-bottom: .5rem;
     border: none;
+    margin-right: 1rem;
 }
 
 .calc-container .keys button:hover {
@@ -75,7 +103,7 @@ body {
 .calc-container .keys .numbers {
     background: none;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 2.1rem;
     font-family: 'Spartan';
     font-weight: 100;
     transition: 200ms;
@@ -89,19 +117,19 @@ body {
 
 .calc-container .keys .operator {
     font-family: 'Spartan';
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 400;
     color: rgb(4, 88, 4, 88, 4);
 }
 
 .calc-container .keys .operator.perc {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 .calc-container .keys .operator.plus,
 .calc-container .keys .operator.div,
 .calc-container .keys .operator.equal {
-    padding-top: .3rem;
+    padding-top: .6rem;
 }
 
 .calc-container .keys .container {
@@ -120,13 +148,14 @@ body {
 
 .calc-container .keys .del,
 .calc-container .keys .reset {
-    background-color: rgb(163, 163, 163);
-    font-size: .9rem;
+    background-color: rgb(131, 131, 131);
+    font-size: 1.4rem;
     font-weight: 400;
     font-family: 'Spartan';
     color: #fff;
+    padding-top: .2rem;
 }
 
 .calc-container .keys .reset {
-    padding-right: .2rem;
+    padding-right: .3rem;
 }
