@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik:wght@300&family=Spartan:wght@100;200;300&display=swap');
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 62.5;
+    border: none;
+    outline: none;
+    background: none;
 }
 
 body {
@@ -19,5 +24,109 @@ body {
     border: 1px solid white;
     width: 16.25rem;
     border-radius: 1.4rem;
+    background-color: #0f0f0f;
+    padding: .7rem .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calc-container .clock {
+    border: 1px solid black;
+    height: 1.5rem;
+    border-radius: 10px;
+}
+
+.calc-container .clock .time {
+    font-family: Quicksand;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+.calc-container .screen {
+    border: 1px solid black;
+}
+
+.calc-container .keys {
+    /* border: 1px solid #fff; */
+    height: 55%;
+    border-radius: 1rem;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-container .keys button{
+    width: 45px;
+    height: 45px;
     background-color: #fff;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    margin-bottom: .5rem;
+    border: none;
+}
+
+.calc-container .keys button:hover {
+    cursor: pointer;
+}
+
+.calc-container .keys .numbers {
+    background: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Spartan';
+    font-weight: 100;
+    transition: 200ms;
+}
+
+.calc-container .keys .numbers:hover,
+.calc-container .keys .operator.plus-min:hover,
+.calc-container .keys .operator.dot:hover {
+    background-color: rgb(66, 66, 66);
+}
+
+.calc-container .keys .operator {
+    font-family: 'Spartan';
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(4, 88, 4, 88, 4);
+}
+
+.calc-container .keys .operator.perc {
+    font-size: 1.2rem;
+}
+
+.calc-container .keys .operator.plus,
+.calc-container .keys .operator.div,
+.calc-container .keys .operator.equal {
+    padding-top: .3rem;
+}
+
+.calc-container .keys .container {
+    height: 100%;
+    width: 100%;
+    /* background-color: yellow; */
+    padding-left: .6rem;
+}
+
+.calc-container .keys .operator.plus-min,
+.calc-container .keys .operator.dot {
+    background: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+.calc-container .keys .del,
+.calc-container .keys .reset {
+    background-color: rgb(163, 163, 163);
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: 'Spartan';
+    color: #fff;
+}
+
+.calc-container .keys .reset {
+    padding-right: .2rem;
 }
