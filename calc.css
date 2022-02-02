@@ -36,15 +36,20 @@ html {
 }
 
 .calc-container .clock {
-    border: 1px solid black;
-    height: 1.5rem;
-    border-radius: 10px;
+    /* border: 1px solid red; */
+    height: 5rem;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
 }
 
 .calc-container .clock .time {
-    font-family: Quicksand;
-    font-size: .7rem;
-    font-weight: 500;
+    font-family: 'Spartan';
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 100;
 }
 
 .calc-container .screen {
@@ -66,7 +71,7 @@ html {
     font-family: 'Spartan';
     font-weight: 300;
     color: rgb(184, 184, 184);
-    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .calc-container .screen .result {
@@ -74,7 +79,7 @@ html {
     font-family: 'Spartan';
     font-weight: 300;
     color: rgb(231, 231, 231);
-    margin-top: 2rem;
+    margin-bottom: 10rem;
 }
 
 .calc-container .keys {
@@ -141,6 +146,11 @@ html {
     /* background-color: yellow; */
     padding-left: .6rem;
 }
+
+/* .calc-container .keys .operator.mul {
+    font-size: 6rem;
+    padding-top: 25px;
+} */
 
 .calc-container .keys .operator.plus-min,
 .calc-container .keys .operator.dot {
