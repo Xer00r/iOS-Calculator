@@ -16,7 +16,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: black;
 }
 
 
@@ -26,7 +26,7 @@ html {
     height: 55rem;
     /* border: 1px solid white; */
     width: 27rem;
-    /* border-radius: 1.4rem; */
+    border-radius: 1.4rem;
     background-color: #0f0f0f;
     padding: .7rem .8rem;
     display: flex;
@@ -180,6 +180,7 @@ html {
     .calc-container {
         height: 100%;
         width: 100%;
+        border-radius: 0% !important;
     }
 
 
@@ -213,6 +214,7 @@ html {
     .calc-container {
         height: 100%;
         width: 100%;
+        border-radius: 0% !important;
     }
 
 
@@ -255,6 +257,7 @@ html {
     .calc-container {
         height: 100%;
         width: 100%;
+        border-radius: 0% !important;
     }
 
 
